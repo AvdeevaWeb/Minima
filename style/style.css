@@ -9,22 +9,20 @@
 }
 
 body{
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif; 
     
 }
 .header{
     background-image: url(../img/back_header.png);
     padding: 30px 100px 0 110px;
-    
-    
 }
 .header__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -45,14 +43,15 @@ body{
 
 .header__title{
     margin-top: 145px;
-    max-width: 50%;
+    max-width: 60%;
     font-size: 48px;
+    line-height: 64px;
     font-weight: bold;
     color: var(--color-primary-light);
 }
 
 .header__title span{
-    padding: 0 5px;
+    padding: 0px 5px;
     background-color: var(--color-primary-dark);
     border: 2px solid var(--color-primary-light);;
     border-radius: 10px;
@@ -62,4 +61,56 @@ body{
     width: 30%;
     margin-top: 25px;
     color: var(--color-primary-light);
+}
+
+.header__bookshop{
+    margin-top: 50px;
+    color: var(--color-primary-light)
+}
+.bookshop_list{
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.booksop_item{
+    width: 125px;
+    height: 70px;
+    background-color: var(--color-primary-light);
+    border-radius: 15px;
+}
+
+.header__banner_btn{
+    margin: 70px 0 100px 0;
+    padding: 16px 48px;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    border-radius: 10px;
+}
+
+/*----------------------------------------------------------*/
+.about{
+    padding: 160px 100px 0 110px;
+    background-color: #ECEDEE;
+}
+.about__minima{
+    display: flex;
+    gap: 10%;
+}
+.about__minima img{
+    max-width: 45%;
+    max-height: 300px;
+}
+.minima__text{
+    max-width: 45%;
+}
+
+.minima__text h1{
+    font-size: 48px;
+}
+
+.minima__text p{
+    margin-top: 65px;
+    font-size: 18px;
+    line-height: 28px;
 }
