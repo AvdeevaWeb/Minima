@@ -84,7 +84,6 @@
                             <li>Размещение электронную версию книги на известных площадках</li>
                         </ul>
                     </li>
-
                 </ul>
             </div>
             <img class="fourstep__img" src="/img/img_fourstep.png" alt="img_fourstep">
@@ -254,13 +253,17 @@
                 <div class="calculator__footer">
                     <div class="calculator__edition">
                         <h4>Количество страниц</h4>
-                        <input type="text">
-                        <span>От 20 до 1000 страниц</span>
+                        <input type="number" class="footer__Input1" id="test" min="200" max="1000" value="10">
+                        <span>От 200   до 1 000 страниц</span>
+
+                        <h4>Тираж</h4>
+                        <input type="number" class="footer__Input2" min="500" max="10000">
+                        <span>От 500 до 10 000 книг</span>
                     </div>
                     <div class="calculator__price">
                         <h1>00 000</h1>
                         <span>Ориентировочная стоимость</span>
-                        <button>Издать книгу</button>
+                        <button class="price__btn" id="price__btn">считать</button>
                     </div>
                 </div>
                 
@@ -269,7 +272,8 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="script/script.js"></script>
+    <script src="script/swiperScript.js"></script>
+    <script src="script/calculatorScript.js"></script>
 </body>
 
 </html>
