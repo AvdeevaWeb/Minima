@@ -195,78 +195,77 @@
                     <div class="calculator_item">
                         <h4>Тип обложки</h4>
                         <div class="item">
-                            <input type="radio" name="" id=""> 
-                            <p>Твердый</p>
+                            <input type="radio" id="coverType1" name="coverType" value="120">
+                            <label>Твердый</label>
                         </div>
                         <div class="item">
-                            <input type="radio" name="" id=""> 
-                            <p>Мягкий</p>
+                            <input type="radio" id="coverType2" name="coverType" value="80">
+                            <label>Мягкий</label>
                         </div>
                     </div>
                     <div class="calculator_item">
                         <h4>Цветность блока</h4>
                         <div class="item">
-                            <input type="radio" name="" id=""> 
-                            <p>Цветной</p>
+                            <input type="radio" id="blockChroma1" name="blockChroma" value="200">
+                            <label>Цветной</label>
                         </div>
+                    
                         <div class="item">
-                            <input type="radio" name="" id=""> 
-                            <p>Черно-белый</p>
+                            <input type="radio" id="blockChroma2" name="blockChroma" value="100">
+                            <label>Черно-белый</label>
                         </div>
                     </div>
-                    <div class="calculator_item">
-                        <h4>Скрепление</h4>
-                        <div class="item">
-                            <input type="radio" name="" id=""> 
-                            <p>Сшитое</p>
+                        <div class="calculator_item">
+                            <h4>Скрепление</h4>
+                            <div class="item">
+                                <input type="radio" id="bookBinding1" name="bookBinding" value="80">
+                                <label>Сшитое</label>
+                            </div>
+                            <div class="item">
+                                <input type="radio" id="bookBinding2" name="bookBinding" value="40">
+                                <label>Клеевое</label>
+                            </div>
                         </div>
-                        <div class="item">
-                            <input type="radio" name="" id=""> 
-                            <p>Клеевое</p>
+                        
+                        <div class="calculator_item">
+                            <h4>Формат</h4>
+                            <div class="item">
+                                <input type="radio" id="format1" name="format" value="300">
+                                <label>A4</label>
+                            </div>
+                            <div class="item">
+                                <input type="radio" id="format2" name="format" value="200">
+                                <label>A5</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="calculator_item">
-                        <h4>Формат</h4>
-                        <div class="item">
-                            <input type="radio" name="" id=""> 
-                            <p>A4</p>
+                      
+                        <div class="calculator_item">
+                            <h4>Печать на экобумаге</h4>
+                            <div class="item">
+                                <input type="radio" id="ecoPaper1" name="ecoPaper" value="400">
+                                <label>Да</label>
+                            </div>
+                            <div class="item">
+                                <input type="radio" id="ecoPaper2" name="ecoPaper" value="200">
+                                <label>Нет</label>
+                            </div>
                         </div>
-                        <div class="item">
-                            <input type="radio" name="" id=""> 
-                            <p>A5</p>
-                        </div>
-                    </div>
-                    <div class="calculator_item">
-                        <h4>Печать на экобумаге</h4>
-                        <div class="item">
-                            <input type="radio" name="" id=""> 
-                            <p>Да</p>
-                        </div>
-                        <div class="item">
-                            <input type="radio" name="" id=""> 
-                            <p>Нет</p>
-                        </div>
-                    </div>
                     
                 </div>
-                
-                <div class="calculator__footer">
-                    <div class="calculator__edition">
-                        <h4>Количество страниц</h4>
-                        <input type="number" class="footer__Input1" id="test" min="200" max="1000" value="10">
-                        <span>От 200   до 1 000 страниц</span>
 
-                        <h4>Тираж</h4>
-                        <input type="number" class="footer__Input2" min="500" max="10000">
-                        <span>От 500 до 10 000 книг</span>
-                    </div>
-                    <div class="calculator__price">
-                        <h1>00 000</h1>
-                        <span>Ориентировочная стоимость</span>
-                        <button class="price__btn" id="price__btn">считать</button>
+                    <div class="calculator__footer">
+                        <div class="calculator__edition">
+                            <h4>Тираж</h4>
+                            <input type="number" id="footer__edition" value="500" min="500" max="10000">
+                            <span id="editionRange">От 500 до 10 000 книг</span>
+                        </div>
+                        <div class="calculator__price">
+                            <h1 id ="price">00 000</h1>
+                            <span>Ориентировочная стоимость</span>
+                            <button class="price__btn" id="price__btn">Издать книгу</button>
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>

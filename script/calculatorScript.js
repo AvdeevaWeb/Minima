@@ -1,18 +1,74 @@
 
-const footerInput1= document.querySelector("#footer__Input1")
+
+const inputs = document.getElementsByTagName('input')
+
+const coverType = document.querySelectorAll('input[name = "coverType"]')
+const blockChroma = document.querySelectorAll('input[name = "blockChroma"]')
+const bookBinding = document.querySelectorAll('input[name = "bookBinding"]')
+const format = document.querySelectorAll('input[name = "format"]')
+const ecoPaper = document.querySelectorAll('input[name = "ecoPaper"]')
+
+const priceElement = document.getElementById('price')
+console.log(priceElement)
+
+let basePrice = 50
+let totalPrice 
 
 
+for(const input of inputs){ 
+  input.addEventListener('input', function(){
+   priceElement.innerHTML = calculate()
+  })
+}
 
-const inputButton = document.querySelector("#price__btn")
 
+function calculate(){
+  const edition = document.getElementById('footer__edition')
+  let editionValue = parseInt(edition.value) 
 
+  totalPrice = basePrice * editionValue
+  console.log(editionValue)
+if(editionValue >= 500){
+  for(const radio of coverType){
+    if(radio.checked){
+      totalPrice +=  parseInt(radio.value) * editionValue
+    }
+  }
 
-console.log(inputButton) // null
+  for(const radio of blockChroma){
+    if(radio.checked){
+      totalPrice +=  parseInt(radio.value) * editionValue
+    }
+  }
 
+  for(const radio of bookBinding){
+    if(radio.checked){
+      totalPrice +=  parseInt(radio.value) * editionValue
+    }
+  }
 
-inputButton.addEventListener('click', () => {
-        console.log('btn clicked');
-      });
+  for(const radio of format){
+    if(radio.checked){
+      totalPrice +=  parseInt(radio.value) * editionValue
+    }
+  }
+
+  for(const radio of ecoPaper){
+    if(radio.checked){
+      totalPrice +=  parseInt(radio.value) * editionValue
+    }
+  }
+  const ru = new Intl.NumberFormat("ru").format(totalPrice);
+  return ru
+}
+else {
+  const editionRange = document.getElementById('editionRange')
+  editionRange.style.color = 'red' 
+  return 0
+}
+  
+}
+
 
     
 
