@@ -209,64 +209,87 @@
                             <input type="radio" id="blockChroma1" name="blockChroma" value="200">
                             <label>Цветной</label>
                         </div>
-                    
+
                         <div class="item">
                             <input type="radio" id="blockChroma2" name="blockChroma" value="100">
                             <label>Черно-белый</label>
                         </div>
                     </div>
-                        <div class="calculator_item">
-                            <h4>Скрепление</h4>
-                            <div class="item">
-                                <input type="radio" id="bookBinding1" name="bookBinding" value="80">
-                                <label>Сшитое</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" id="bookBinding2" name="bookBinding" value="40">
-                                <label>Клеевое</label>
-                            </div>
+                    <div class="calculator_item">
+                        <h4>Скрепление</h4>
+                        <div class="item">
+                            <input type="radio" id="bookBinding1" name="bookBinding" value="80">
+                            <label>Сшитое</label>
                         </div>
-                        
-                        <div class="calculator_item">
-                            <h4>Формат</h4>
-                            <div class="item">
-                                <input type="radio" id="format1" name="format" value="300">
-                                <label>A4</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" id="format2" name="format" value="200">
-                                <label>A5</label>
-                            </div>
+                        <div class="item">
+                            <input type="radio" id="bookBinding2" name="bookBinding" value="40">
+                            <label>Клеевое</label>
                         </div>
-                      
-                        <div class="calculator_item">
-                            <h4>Печать на экобумаге</h4>
-                            <div class="item">
-                                <input type="radio" id="ecoPaper1" name="ecoPaper" value="400">
-                                <label>Да</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" id="ecoPaper2" name="ecoPaper" value="200">
-                                <label>Нет</label>
-                            </div>
-                        </div>
-                    
-                </div>
+                    </div>
 
-                    <div class="calculator__footer">
-                        <div class="calculator__edition">
-                            <h4>Тираж</h4>
-                            <input type="number" id="footer__edition" value="500" min="500" max="10000">
-                            <span id="editionRange">От 500 до 10 000 книг</span>
+                    <div class="calculator_item">
+                        <h4>Формат</h4>
+                        <div class="item">
+                            <input type="radio" id="format1" name="format" value="300">
+                            <label>A4</label>
                         </div>
-                        <div class="calculator__price">
-                            <h1 id ="price">00 000</h1>
-                            <span>Ориентировочная стоимость</span>
-                            <button class="price__btn" id="price__btn">Издать книгу</button>
+                        <div class="item">
+                            <input type="radio" id="format2" name="format" value="200">
+                            <label>A5</label>
+                        </div>
+                    </div>
+
+                    <div class="calculator_item">
+                        <h4>Печать на экобумаге</h4>
+                        <div class="item">
+                            <input type="radio" id="ecoPaper1" name="ecoPaper" value="400">
+                            <label>Да</label>
+                        </div>
+                        <div class="item">
+                            <input type="radio" id="ecoPaper2" name="ecoPaper" value="200">
+                            <label>Нет</label>
                         </div>
                     </div>
                 </div>
+
+                <div class="calculator__footer">
+                    <div class="calculator__edition">
+                        <h4>Тираж</h4>
+                        <input type="number" id="footer__edition" value="500" min="500" max="10000">
+                        <span id="editionRange">От 500 до 10 000 книг</span>
+                    </div>
+                    <div class="calculator__price">
+                        <h1 id="price">00 000</h1>
+                        <span>Ориентировочная стоимость</span>
+                        <button class="price__btn" id="price__btn">Издать книгу</button>
+                    </div>
+                </div>
             </div>
+        </div>
+        </div>
+    </section>
+    <section class="contactUs">
+        <h1>Контакты</h1>
+        <div class="contactUs__conteiner">
+            <div class="contactUs_info">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name">
+                <label for="telephone">Телефон:</label>
+                <input type="tel" id="telephone" name="telephone">
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Сообщение: <span class="required"></label>
+                <textarea id="message" name="message" placeholder="Напишите удобное время для звонка"></textarea>
+
+                <button>Связаться с нами</button>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d794.0187387981255!2d37.66175587432586!3d55.74418452291487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ae9732e10b9%3A0xd7144ea7a2641bb3!2z0YPQuy4g0JDQu9C10LrRgdCw0L3QtNGA0LAg0KHQvtC70LbQtdC90LjRhtGL0L3QsCwgMTcg0YHRgtGA0L7QtdC90LjQtSAyLCDQnNC-0YHQutCy0LAsIDEwOTAwNA!5e0!3m2!1sru!2sru!4v1684843049406!5m2!1sru!2sru"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
         </div>
     </section>
 
