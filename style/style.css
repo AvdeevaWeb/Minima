@@ -16,7 +16,7 @@ body {
 .header {
     background-image: url(../img/back_header.png);
     background-repeat: no-repeat;
-    padding: 30px 200px 0 250px;
+     padding: 2% 10% 0 13%;
     background-size: cover;
 }
 
@@ -108,7 +108,7 @@ body {
 
 /*----------------------------------------------------------*/
 .about {
-    padding: 160px 200px 0 200px;
+    padding: 2% 10% 0 10%;
     background-color: #ECEDEE;
 }
 
@@ -259,6 +259,7 @@ body {
 }
 .calculator__conteiner {
     margin-top: 50px;
+    min-width: 40%;
     display: flex;
     flex-wrap: wrap;
     background-color: var(--color-primary-light);
@@ -480,3 +481,21 @@ footer{
     visibility: visible;
     opacity: 1;
 }
+
+
+@media (max-width: 1100px) {
+    .header__header{
+        display: none;
+    }
+
+    .calculator__conteiner{
+        max-width: 800px;
+    }
+    .calculator__grid {
+       
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+  }
+
+ 
