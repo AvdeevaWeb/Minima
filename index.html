@@ -34,11 +34,11 @@
         <p class="header__text">Помогаем начинающим авторам в печати, оформлении и размещении книги на продажу</p>
 
         <div class="header__bookshop">
-            <p> Сотрудничаем с книжными магазинами</p>
+            <p> Сотрудничаем с книжными магазинами: </p>
             <div class="bookshop_list">
-                <div class="booksop_item"></div>
-                <div class="booksop_item"></div>
-                <div class="booksop_item"></div>
+                <div class="booksop_item"><img src="img/img_booksop_tem1.png" alt=""></div>
+                <div class="booksop_item"><img src="img/img_booksop_item2.png" alt=""></div>
+                <div class="booksop_item"><img src="img/img_booksop_tem3.png" alt=""></div>
             </div>
         </div>
         <button class="header__banner_btn">Издать книгу</button>
@@ -267,35 +267,48 @@
             </div>
         </div>
         </div>
-    </section>
-    <section class="contactUs">
-        <h1>Контакты</h1>
-        <div class="contactUs__conteiner">
-            <div class="contactUs_info">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name">
-                <label for="telephone">Телефон:</label>
-                <input type="tel" id="telephone" name="telephone">
-                <label for="email">Почта:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Сообщение: <span class="required"></label>
-                <textarea id="message" name="message" placeholder="Напишите удобное время для звонка"></textarea>
-
-                <button>Связаться с нами</button>
+        <section class="contactUs">
+            <h1>Контакты</h1>
+            <div class="contactUs__conteiner">
+                    <form>      
+                        <input name="name" type="text" class="feedback-input" placeholder="Имя" />   
+                        <input name="email" type="email" class="feedback-input" placeholder="Почта" />
+                        <input name="tel" type="tel" class="feedback-input" placeholder="Телефон" />
+                        <textarea name="text" class="feedback-input" placeholder="Cообщение"></textarea>
+                        <button>Связаться с нами</button>
+                      </form>
+ 
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d794.0187387981255!2d37.66175587432586!3d55.74418452291487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ae9732e10b9%3A0xd7144ea7a2641bb3!2z0YPQuy4g0JDQu9C10LrRgdCw0L3QtNGA0LAg0KHQvtC70LbQtdC90LjRhtGL0L3QsCwgMTcg0YHRgtGA0L7QtdC90LjQtSAyLCDQnNC-0YHQutCy0LAsIDEwOTAwNA!5e0!3m2!1sru!2sru!4v1684843049406!5m2!1sru!2sru"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d794.0187387981255!2d37.66175587432586!3d55.74418452291487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ae9732e10b9%3A0xd7144ea7a2641bb3!2z0YPQuy4g0JDQu9C10LrRgdCw0L3QtNGA0LAg0KHQvtC70LbQtdC90LjRhtGL0L3QsCwgMTcg0YHRgtGA0L7QtdC90LjQtSAyLCDQnNC-0YHQutCy0LAsIDEwOTAwNA!5e0!3m2!1sru!2sru!4v1684843049406!5m2!1sru!2sru"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-
-        </div>
+     </div>
+        </section>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script/swiperScript.js"></script>
     <script src="script/calculatorScript.js"></script>
 </body>
+
+<footer class="footer">
+            <div class="footer__footer">
+                <div class="footer_contact">
+                    <img src="img/icon_mail.png" alt="">
+                    <p>Minima@hellp.com</p>
+                </div>
+                <div class="footer_contact">
+                    <img src="img/icon_tel.png" alt="">
+                    <p>+7 905 763-29-60</p>
+                </div>
+            </div>
+			<div class="footer__media">
+				<a href="#"><img src="img/instagram.png" alt=""></a>
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+                <a href="#"><img src="img/twitter.png" alt=""></a>
+				
+			</div>
+		</footer>
 
 </html>
