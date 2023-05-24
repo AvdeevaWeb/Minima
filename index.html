@@ -26,7 +26,7 @@
                 <li>Примеры работ</li>
                 <li>Калькулятор</li>
                 <li>Контакты</li>
-                <li class="header__btn">Издать книгу</li>
+                <li class="header__btn modal_btn" id="modal_btn">Издать книгу</li>
             </ul>
         </header>
 
@@ -41,7 +41,7 @@
                 <div class="booksop_item"><img src="img/img_booksop_tem3.png" alt=""></div>
             </div>
         </div>
-        <button class="header__banner_btn">Издать книгу</button>
+        <button class="header__banner_btn modal_btn" id="modal_btn">Издать книгу</button>
     </section>
     <section class="about">
         <div class="about__minima">
@@ -261,7 +261,7 @@
                     <div class="calculator__price">
                         <h1 id="price">00 000</h1>
                         <span>Ориентировочная стоимость</span>
-                        <button class="price__btn" id="price__btn">Издать книгу</button>
+                        <button class="price__btn modal_btn" id="price__btn ">Издать книгу</button>
                     </div>
                 </div>
             </div>
@@ -311,6 +311,19 @@
                 <a href="#"><img src="img/twitter.png" alt=""></a>
 				
 			</div>
-		</footer>
+	</footer>
 
+
+    <div class="modal" id="modal">
+        <div class="modal__modalBox">
+            <form action="https://formspree.io/f/mjvddwrp"
+            method="POST">         
+                <input name="name" type="text" class="feedback-input" placeholder="Имя" />   
+                <input name="email" type="email" class="feedback-input" placeholder="Почта" />
+                <input name="tel" type="tel" class="feedback-input" placeholder="Телефон" />
+                <button type="submit">Связаться с нами</button>
+              </form>
+        </div>
+    </div>
+    <script src="script/modalScript.js"></script>
 </html>
