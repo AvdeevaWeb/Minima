@@ -28,7 +28,7 @@ body {
 }
 .header__header img{
     max-width: 200px;
-    max-height: 80px;
+    max-height: 90px;
 }
 .header__list {
     display: flex;
@@ -278,7 +278,7 @@ body {
 }
 .calculator_item h4 {
     font-weight: 700;
-    font-size: calc(15px + 7 *(100vw/1920));
+    font-size: calc(15px + 10 *(100vw/1920));
     line-height: 53px;
 }
 .calculator_item label {
@@ -333,7 +333,7 @@ body {
 }
 .calculator__price h1 {
     font-weight: 700;
-    font-size: calc(60px + 30 *(100vw/1920));
+    font-size: calc(40px + 30 *(100vw/1920));
     line-height: 22px;
     margin-bottom: 30px;
 }
