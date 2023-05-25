@@ -417,8 +417,8 @@ form button:hover{
 }
 
 .contactUs__conteiner iframe{
-    max-width:40%;
-    max-height: 500px;
+    min-width:40%;
+    mix-height: 500px;
     border-radius: 5px;
     outline: 2px solid var(--color-primary-dark);
 }
@@ -530,6 +530,7 @@ footer{
         padding: 10% 5% 0 5%;
         margin: 0;
     }
+
     
     .header__burger_btn{
         display: block;
@@ -544,6 +545,7 @@ footer{
         padding: 70px 20px 20px 20px;
         transition: transform .5s;
     }
+
 
     .header__list{
         display: block;
@@ -564,7 +566,77 @@ footer{
         grid-template-columns: repeat(2, 1fr)
     }
 
-
+    .calculator__price{
+        gap: 5px;
+    }
+    .calculator__footer{
+        padding: 30px;
+    }
   }
 
+  @media (max-width: 800px){
+    .about h1{
+        font-size: 25px;
+        
+    }
+    .header__title{
+        margin-top: 50px;
+        font-size: 25px; 
+    }
+    .header__text{
+        width: 70%;
+        font-size: 15px;
+    }
+    .booksop_item{
+        width: 100px;
+        height: 70px;
+        background-size:cover;
+    }
+    .booksop_item img{
+        object-fit:cover;
+        width: 80px;
+        height: 50px;
+    }
+    .header__banner_btn{
+        padding: 15px 30px;
+    }
+
+    .fourstep{
+        justify-content: flex-start
+    }
+    .fourstep h1{
+        width: 300px;
+    }
+    .fourstep__img{
+        display: none;
+    
+    }
+    .listMain_li{
+        width: 400px;
+    }
+    
+    .content__main img{
+        display: none;
+    }
+
+    .content__title {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .content__main{
+        margin-top: 20px;
+    }
+    .content__text{
+        width: 100%;
+    }
+    .content__text p{
+        line-height: 20px;
+    }
+
+    .content__text span{
+        font-size: 16px;
+        line-height: 30px;
+    }
+  }
  
