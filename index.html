@@ -17,17 +17,26 @@
 </head>
 
 <body>
-    <section class="header">
+    <section class="header" id="header">
         <header class="header__header">
+            <button class="header__burger_btn" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <img src="img/logo.png" alt="logo" class="logo">
-            <ul class="header__list">
-                <li>Главная</li>
-                <li>О нас</li>
-                <li>Примеры работ</li>
-                <li>Калькулятор</li>
-                <li>Контакты</li>
-                <li class="header__btn modal_btn" id="modal_btn">Издать книгу</li>
-            </ul>
+            <nav>
+                <ul class="header__list">
+                    <li>Главная</li>
+                    <li>О нас</li>
+                    <li>Примеры работ</li>
+                    <li>Калькулятор</li>
+                    <li>Контакты</li>
+                    <li class="header__btn modal_btn" id="modal_btn">Издать книгу</li>
+                </ul>
+            </nav>
+
         </header>
 
         <h1 class="header__title">Создавайте, оформляйте и печатайте <span>свои книги</span></h1>
@@ -270,60 +279,60 @@
         <section class="contactUs">
             <h1>Контакты</h1>
             <div class="contactUs__conteiner">
-                    <form action="https://formspree.io/f/xpzeedrq"
-                    method="POST">  
-                            
-                        <input name="name" type="text" class="feedback-input" placeholder="Имя" />   
-                        <input name="email" type="email" class="feedback-input" placeholder="Почта" />
-                        <input name="tel" type="tel" class="feedback-input" placeholder="Телефон" />
-                        <textarea name="message" class="feedback-input" placeholder="Cообщение"></textarea>
-                        <button type="submit">Связаться с нами</button>
-                      </form>
- 
+                <form action="https://formspree.io/f/xpzeedrq" method="POST">
+
+                    <input name="name" type="text" class="feedback-input" placeholder="Имя" />
+                    <input name="email" type="email" class="feedback-input" placeholder="Почта" />
+                    <input name="tel" type="tel" class="feedback-input" placeholder="Телефон" />
+                    <textarea name="message" class="feedback-input" placeholder="Cообщение"></textarea>
+                    <button type="submit">Связаться с нами</button>
+                </form>
+
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d794.0187387981255!2d37.66175587432586!3d55.74418452291487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ae9732e10b9%3A0xd7144ea7a2641bb3!2z0YPQuy4g0JDQu9C10LrRgdCw0L3QtNGA0LAg0KHQvtC70LbQtdC90LjRhtGL0L3QsCwgMTcg0YHRgtGA0L7QtdC90LjQtSAyLCDQnNC-0YHQutCy0LAsIDEwOTAwNA!5e0!3m2!1sru!2sru!4v1684843049406!5m2!1sru!2sru"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-     </div>
+            </div>
         </section>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script/swiperScript.js"></script>
     <script src="script/calculatorScript.js"></script>
+    <script src="script/hamburgerMenuScript.js"></script>
 </body>
 
 <footer class="footer">
-            <div class="footer__footer">
-                <div class="footer_contact">
-                    <img src="img/icon_mail.png" alt="">
-                    <p>Minima@hellp.com</p>
-                </div>
-                <div class="footer_contact">
-                    <img src="img/icon_tel.png" alt="">
-                    <p>+7 905 763-29-60</p>
-                </div>
-            </div>
-			<div class="footer__media">
-				<a href="#"><img src="img/instagram.png" alt=""></a>
-                <a href="#"><img src="img/facebook.png" alt=""></a>
-                <a href="#"><img src="img/twitter.png" alt=""></a>
-				
-			</div>
-	</footer>
-
-
-    <div class="modal" id="modal">
-        <div class="modal__modalBox">
-            <form action="https://formspree.io/f/mjvddwrp"
-            method="POST">         
-                <input name="name" type="text" class="feedback-input" placeholder="Имя" />   
-                <input name="email" type="email" class="feedback-input" placeholder="Почта" />
-                <input name="tel" type="tel" class="feedback-input" placeholder="Телефон" />
-                <button type="submit">Связаться с нами</button>
-              </form>
+    <div class="footer__footer">
+        <div class="footer_contact">
+            <img src="img/icon_mail.png" alt="">
+            <p>Minima@hellp.com</p>
+        </div>
+        <div class="footer_contact">
+            <img src="img/icon_tel.png" alt="">
+            <p>+7 905 763-29-60</p>
         </div>
     </div>
+    <div class="footer__media">
+        <a href="#"><img src="img/instagram.png" alt=""></a>
+        <a href="#"><img src="img/facebook.png" alt=""></a>
+        <a href="#"><img src="img/twitter.png" alt=""></a>
+
+    </div>
+</footer>
+
+
+<div class="modal" id="modal">
+    <div class="modal__modalBox">
+        <form action="https://formspree.io/f/mjvddwrp" method="POST">
+            <input name="name" type="text" class="feedback-input" placeholder="Имя" />
+            <input name="email" type="email" class="feedback-input" placeholder="Почта" />
+            <input name="tel" type="tel" class="feedback-input" placeholder="Телефон" />
+            <button type="submit">Связаться с нами</button>
+        </form>
+    </div>
     <script src="script/modalScript.js"></script>
+</div>
+
 </html>

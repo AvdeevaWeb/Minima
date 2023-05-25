@@ -4,7 +4,7 @@ const modalbtn =document.getElementsByClassName('modal_btn')
 console.log(modalbtn)
 
 for (btn of modalbtn){
-    btn1.addEventListener('click', function (){
+    btn.addEventListener('click', function (){
         modal.classList.add('open')
     })
 }
