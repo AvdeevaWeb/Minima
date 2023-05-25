@@ -1,7 +1,9 @@
 
 const modal = document.getElementById('modal')
 const modalbtn =document.getElementsByClassName('modal_btn')
-console.log(modalbtn)
+
+
+
 
 for (btn of modalbtn){
     btn.addEventListener('click', function (){
@@ -9,10 +11,13 @@ for (btn of modalbtn){
     })
 }
 
+
 window.addEventListener('keydown', (e) => {
     if(e.key === 'Escape'){
         modal.classList.remove('open')
     }
 })
 
-
+document.querySelector("#modal").addEventListener("click", () => { 
+    modal.classList.remove('open')
+ })

@@ -108,17 +108,17 @@ body {
 
 /*----------------------------------------------------------*/
 .about {
-    padding: 2% 10% 0 10%;
+    padding: 5% 10% 0 10%;
     background-color: #ECEDEE;
 }
 
 .about__minima {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .about__minima img {
-    max-width: 55%;
+    max-width: 45%;
     max-height: 300px;
 }
 .minima__text {
@@ -167,7 +167,7 @@ body {
 }
 .fourstep__img {
     max-width: 45%;
-    max-height: 800px;
+    min-height: 450px;
 }
 
 .exampleOfWorks {
@@ -490,7 +490,7 @@ footer{
     height: 40px;
     border: none;
     background-color: var(--color-primary-dark);
-    display: non
+    display: none;
     
 }
 .header__burger_btn span{
@@ -498,6 +498,7 @@ footer{
     width: 30px;
     height: 3px;
     left: 5px;
+   
     background-color: var(--color-primary-light);
     transition: transform .5s, opacity .5s;
 }
@@ -520,7 +521,16 @@ footer{
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
+    .header{
+        padding: 3% 5% 0 5%;
+    }
+
+    .about, .fourstep, .exampleOfWorks, .calculator, .contactUs {
+        padding: 10% 5% 0 5%;
+        margin: 0;
+    }
+    
     .header__burger_btn{
         display: block;
         z-index: 2;
