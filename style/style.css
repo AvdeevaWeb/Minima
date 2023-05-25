@@ -269,7 +269,7 @@ body {
 }
 .calculator__grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr)
+    grid-template-columns: repeat(3, 1fr)
 }
 .calculator_item {
     display: flex;
@@ -417,8 +417,8 @@ form button:hover{
 }
 
 .contactUs__conteiner iframe{
-    min-width:40%;
-    mix-height: 500px;
+    max-width:70%;
+    min-height: 500px;
     border-radius: 5px;
     outline: 2px solid var(--color-primary-dark);
 }
@@ -489,7 +489,7 @@ footer{
     width: 40px;
     height: 40px;
     border: none;
-    background-color: var(--color-primary-dark);
+    background-color: transparent;
     display: none;
     
 }
@@ -577,10 +577,9 @@ footer{
   @media (max-width: 800px){
     .about h1{
         font-size: 25px;
-        
     }
     .header__title{
-        margin-top: 50px;
+        margin-top: 30px;
         font-size: 25px; 
     }
     .header__text{
@@ -638,5 +637,80 @@ footer{
         font-size: 16px;
         line-height: 30px;
     }
+
+    .swiper-button-next, .swiper-button-prev{
+        width: 10px !important;
+    }
+
+    .calculator_item h4{
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .calculator_item{
+        padding: 40px;
+    }
+
+    .calculator__price button{
+        padding: 15px 5px;
+        font-size: 15px;
+        max-width: 180px;
+    }
+
+    .calculator__price span{
+       font-size: 10px; 
+    }
+
+    .calculator__price h1{
+        margin-bottom: 0px;
+        font-size: 40px;
+    }
+
+    .contactUs__conteiner{
+        flex-direction: column;
+        padding: 0;
   }
+
+  .contactUs__conteiner form{
+    max-width: 100%;
+  }
+
+  .feedback-input{
+    margin-bottom: 5px;
+}
+
+  .contactUs__conteiner iframe{
+    max-width:100%;
+    margin-bottom: 20px;
+  }
+  .header__header img{
+    width: 150px;
+  }
+  .header__burger_btn{
+    width: 30px;
+    height: 20px;
+  }
+
+  .header__burger_btn span{
+    width: 25px;
+    height: 2px;
+  }
+ 
+}
+
+
+@media(max-width:515px){
+    .header__title{
+        max-width:80%;
+    }
+    .fourstep__listSecond li{
+       max-width: 300px;
+    }
+    .about, .fourstep, .exampleOfWorks, .calculator, .contactUs {
+        padding: 5% 1% 0 1%;
+        margin: 0;
+    }
+}
+  
  
