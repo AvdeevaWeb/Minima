@@ -544,7 +544,17 @@ footer{
         background-color: var(--color-primary-dark);
         padding: 70px 20px 20px 20px;
         transition: transform .5s;
+        line-height: 50px;
+        font-size: 17px;
     }
+
+    .header__btn{
+        background-color: var(--color-primary-light);
+        color: var(--color-primary-dark);
+        padding: 5px;
+        line-height: 25px;
+        border-radius: 5px;
+    } 
 
 
     .header__list{
@@ -580,7 +590,7 @@ footer{
     }
     .header__title{
         margin-top: 30px;
-        font-size: 25px; 
+        font-size: calc(17px + 4 * (100vw/800)); 
     }
     .header__text{
         width: 70%;
@@ -620,7 +630,12 @@ footer{
 
     .content__title {
         font-weight: 700;
-        font-size: 15px;
+        font-size: calc(15px + 2 * (100vw/800));
+        line-height: 30px;
+    }
+    .content__title span{
+        font-weight: 700;
+        font-size: calc(15px + 4 * (100vw/800));
         line-height: 30px;
     }
     .content__main{
@@ -634,8 +649,8 @@ footer{
     }
 
     .content__text span{
-        font-size: 16px;
-        line-height: 30px;
+        font-size: calc(12px + 4 * (100vw/800));
+        line-height: 25px;
     }
 
     .swiper-button-next, .swiper-button-prev{
@@ -689,7 +704,7 @@ footer{
   }
   .header__burger_btn{
     width: 30px;
-    height: 20px;
+    height: 15px;
   }
 
   .header__burger_btn span{
@@ -705,7 +720,7 @@ footer{
         max-width:80%;
     }
     .fourstep__listSecond li{
-       max-width: 300px;
+       width: 300px;
     }
     .about, .fourstep, .exampleOfWorks, .calculator, .contactUs {
         padding: 5% 1% 0 1%;
@@ -713,4 +728,81 @@ footer{
     }
 }
   
- 
+@media(max-width:410px){
+    .bookshop_list{
+        gap: 5px
+    }
+    .booksop_item img{
+        width: 60px;
+    }
+    .header__burger_btn span{
+        width: 20px;
+        height: 1.5;
+    }
+
+    .header__bookshop{
+        margin-top: 35px;
+    }
+
+    .about__minima img{
+       display: none;
+    }
+    .about h1, .fourstep h1, .exampleOfWorks h1, .calculator h1, .contactUs h1{
+        font-size: calc(17px + 4 * (100vw/800)) 
+    }
+    .minima__text {
+        max-width: 100%;
+    }
+    .minima__text p{
+        margin-top: 20px;
+    }
+    .fourstep{
+        margin-top: 25px;
+    }
+    .fourstep__list{
+        max-width: 100%;
+    }
+   
+    .listMain_li {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 32px;
+        width: 300px;
+        list-style: none;
+    }
+
+    .listMain_li li{
+        font-size: 12px;
+        line-height: 20px;
+        max-width: 270px;
+    }
+    .exampleOfWorks h1{
+        margin-bottom: 20px;
+    }
+
+    .content__text p{
+        font-size: 10px;
+    }
+
+    .swiper-button-prev img, .swiper-button-next img{
+        width: 30px;
+        height: 30px;
+    }
+    .calculator h1{
+        margin-top: 20px;
+    }
+    .calculator__conteiner{
+        margin-top: 20px;
+        width: 300px;
+    }
+    .calculator__grid{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .calculator__footer{
+        flex-wrap: wrap;
+    }
+
+    .calculator__price h1{
+        font-size: 40px;
+    }
+}
